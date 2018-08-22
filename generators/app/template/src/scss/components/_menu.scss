@@ -1,0 +1,37 @@
+#mainMenu {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    font-size: 26px;
+}
+
+#submenu {
+    position: absolute;
+    top: 84px;
+    font-size: 22px;
+}
+
+.menu-button {
+    min-width: 70px;
+    height: 24px;
+    padding: 0 6px;
+    text-align: center;
+    margin-left: 40px;
+
+    .wgt-label {
+        line-height: 22px;
+        margin-left: 0;
+    }
+
+}
+
+.menu-button {
+    &.focused {
+        background: rgba(0, 0, 0, 0.15);
+    }
+
+    &.selected {
+        color: rgb(209, 73, 78);
+    }
+
+}

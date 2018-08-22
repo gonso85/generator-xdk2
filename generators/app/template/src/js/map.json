@@ -1,0 +1,129 @@
+{
+    "config_pages": [
+
+        {
+            "id": "PAGE1",
+            "title": "page 1",
+            "template": "SAMPLE",
+            "containers": ["CONTAINER_1", "CONTAINER_2"],
+            "deepLinkingPage": ""
+        },
+
+        {
+            "id": "PAGE2",
+            "template": "TEMPLATE2",
+            "containers": ["CONTAINER_3"]
+        },
+
+        {
+            "id": "PAGE3",
+            "template": "TEMPLATE4",
+            "containers": []
+        },
+
+        {
+            "id": "PAGE4",
+            "template": "TEMPLATE4",
+            "containers": []
+        },
+
+        {
+            "id": "PAGE5",
+            "template": "TEMPLATE4",
+            "containers": []
+        },
+
+        {
+            "id": "PAGE6",
+            "template": "TEMPLATE4",
+            "containers": []
+        },
+
+        {
+            "id": "PAGE7",
+            "template": "TEMPLATE3",
+            "containers": []
+        },
+
+        {
+            "id": "PAGE8",
+            "template": "FULLSCREEN",
+            "containers": []
+        }
+    ],
+
+    "config_containers": [
+
+        {
+            "id": "CONTAINER_1",
+            "title": "",
+            "displayText": "",
+            "query": ""
+        },
+
+        {
+            "id": "CONTAINER_2",
+            "title": "",
+            "displayText": "",
+            "query": ""
+        },
+
+        {
+            "id": "CONTAINER_3",
+            "title": "",
+            "displayText": "",
+            "query": ""
+        }
+    ],
+
+    "config_menus": [{
+        "id": "DEFAULT_MENU",
+        "title": "",
+        "items": [
+            {
+                "id": "HOME",
+                "title": "Home",
+                "action": "vdk://page/PAGE1"
+            },
+
+            {
+                "id": "MOVIES",
+                "title": "Movies",
+                "action": "vdk://page/PAGE2",
+                "items": [{
+                    "id": "ACTION",
+                    "title": "Action",
+                    "action": "vdk://page/PAGE3"
+                }, {
+                    "id": "COMEDY",
+                    "title": "Comedy",
+                    "action": "vdk://page/PAGE4"
+                }, {
+                    "id": "DRAMA",
+                    "title": "Drama",
+                    "action": "vdk://page/PAGE5"
+                }, {
+                    "id": "HORROR",
+                    "title": "Horror",
+                    "action": "vdk://page/PAGE6"
+                }]
+            },
+
+            {
+                "id": "SETTINGS",
+                "title": "Settings",
+                "action": "vdk://page/PAGE7"
+            }
+
+        ]
+    }],
+
+    "messages": [{
+        "id": "12345",
+        "code": "SAMPLE_CODE",
+        "log": false,
+        "title": "Sample",
+        "message": "This is a sample message from map.json",
+        "type": "popup"
+    }]
+}

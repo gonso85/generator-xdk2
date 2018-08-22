@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "../.eslintrc.json"
+    ],
+    "env": {
+        "mocha": true,
+        "node": true,
+        "amd": true,
+        "browser": true,
+        "phantomjs": true
+    },
+    "globals": {
+        "initMochaPhantomJS": true
+    },
+    "rules": {
+        "quotes": [2, "double"],
+        "strict": [2, "function"],
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+        "wrap-iife": [2, "inside"]
+    }
+}

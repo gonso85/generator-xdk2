@@ -1,0 +1,15 @@
+/.gradle
+build
+.DS_Store
+_DS_Store
+.scssc
+.jruby
+.sass-cache
+src/dep
+**/src/dep
+node_modules
+gulp/tmp
+src/css
+.vscode
+coverage/
+instrumented/

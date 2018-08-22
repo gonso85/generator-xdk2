@@ -1,0 +1,47 @@
+.wgt-alert {
+    z-index: 200;
+
+    .wgt-dialog-container {
+        background: #eeeeee;
+        margin: 188px auto;
+        padding: 10px 15px;
+        position: relative;
+        width: 562px;
+        height: 324px;
+
+        .wgt-dialog-header {
+            border-bottom: 1px solid rgba(89, 89, 89, 0.8);
+            font-size: 24px;
+            padding: 0 7px 5px;
+        }
+
+        .wgt-dialog-content {
+            text-align: center;
+            height: 260px;
+        }
+
+        .wgt-dialog-message {
+            font-size: 23px;
+            line-height: 36px;
+            padding: 40px 20px 20px;
+            height: 110px;
+        }
+
+        .wgt-button {
+            font-size: 20px;
+            margin: auto;
+            padding: 8px;
+            width: 170px;
+        }
+
+        .wgt-dialog-footer {
+            border-top: 1px solid rgba(89, 89, 89, 0.8);
+        }
+
+        .footer {
+            float: right;
+        }
+
+    }
+
+}

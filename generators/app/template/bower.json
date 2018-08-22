@@ -1,0 +1,20 @@
+{
+    "name": "viki",
+    "version": "2.0.0",
+    "main": "index.html",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "xdk-ax": "~2.6.0",
+        "xdk-base": "~2.6.0",
+        "xdk-ui-basic": "~2.6.0",
+        "xdk-ui-grid": "~2.6.0",
+        "xdk-ui-input": "~2.6.0",
+        "xdk-history": "~2.6.0",
+        "xdk-mouse": "~2.6.0",
+        "vdk-appGrid": "~1.1.0",
+        "vdk-loading": "~1.0.0",
+        "vdk-message": "~1.0.0",
+        "vdk-lib-moment": "~2.4.0"
+    }
+}

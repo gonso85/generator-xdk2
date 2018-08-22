@@ -1,0 +1,14 @@
+{
+  "directory": "src/dep",
+  "analytics": false,
+  "timeout": 120000,
+  "registry": {
+    "search": [
+      "http://registry-xdk.appglobe.accedo.tv",
+      "https://bower.herokuapp.com"
+    ]
+  },
+  "scripts": {
+
+  }
+}

@@ -1,0 +1,51 @@
+#maintenanceView {
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 720px;
+    color: black;
+    position: fixed;
+
+    .bar {
+        top: 103px;
+        left: 0;
+        position: relative;
+    }
+
+    .maintenance-message-title {
+        top: 177px;
+        width: 1280px;
+        font-size: 42px;
+        text-align: center;
+        position: relative;
+    }
+
+    .maintenance-message-content {
+        font-size: 24px;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+        top: 207px;
+        width: 1040px;
+        left: 120px;
+        overflow: hidden;
+        height: 80px;
+    }
+
+    .wgt-button {
+        background-color: #5d6675;
+        font-size: 20px;
+        margin: auto;
+        padding: 7px 0px;
+        text-align: center;
+        top: 218px;
+        width: 200px;
+        position: relative;
+        left: 540px;
+    }
+
+    .wgt-button.focused {
+        background-color: #009bdd;
+    }
+
+}

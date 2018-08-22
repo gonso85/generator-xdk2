@@ -1,0 +1,89 @@
+{
+    "basePath": "src/",
+    "appJsFolder": "js/",
+    "depFolder": "dep/",
+
+    "buildFolder": "build/",
+    "distributionsFolder": "dist/",
+    "optimizedFolder": "optimized/",
+
+    "loaderPaths": {
+        "image": "../dep/xdk-base/loader/image",
+        "json": "../dep/xdk-base/loader/json",
+        "css": "../dep/xdk-base/loader/css"
+    },
+
+    "requirejs": {},
+    "distIncludes": [],
+
+    "jsdocBuildFolder": "docs",
+    "jsdocTmpFile": "jsdoc.conf",
+    "jsdoc": {
+        "tags": {
+            "allowUnknownTags": true
+        },
+        "plugins": ["plugins/markdown"],
+        "opts": {
+            "encoding": "utf8",
+            "template": "./node_modules/jaguarjs-jsdoc",
+            "destination": "./build/jsdoc",
+            "recurse": true,
+            "verbose": true
+        },
+        "markdown": {
+            "parser": "gfm",
+            "hardwrap": true
+        },
+        "templates": {
+            "systemName": "VDK App",
+            "footer": "",
+            "copyright": "Accedo",
+            "navType": "vertical",
+            "theme": "spacelab",
+            "linenums": true,
+            "collapseSymbols": false,
+            "inverseNav": true
+        }
+    },
+
+    "jshintTmpFile": "jshint.json",
+    "jshint": {
+        "bitwise": "false",
+        "curly": "false",
+        "eqeqeq": "true",
+        "es3": "true",
+        "indent": "4",
+        "newcap": "true",
+        "immed": "true",
+        "quotmark": "double",
+        "browser": "true",
+        "loopfunc": "true",
+        "undef": "true",
+        "unused": "vars",
+        "white": "false",
+        "predef": [
+            "define",
+            "undefine",
+            "amd",
+            "domReady",
+            "ActiveXObject",
+            "alert",
+            "nwf",
+            "boxee",
+            "deviceInfo",
+            "require",
+            "tizen",
+            "JSON"
+        ]
+    },
+
+    "gulpTempFolder": "gulp/tmp/",
+    "debug": true,
+    "statsBaseUrl": "https://stats-vdk.appglobe.accedo.tv",
+    "karma": {
+        "config": {
+            "unit": "karma.unit.conf.js",
+            "coverage": "karma.coverage.conf.js"
+        }
+    }
+}

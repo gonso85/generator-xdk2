@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "../.eslintrc.json"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "env": {
+        "amd": true,
+        "browser": true,
+        "node": false
+    },
+    "globals": {
+        // true for writable, false for readonly
+        "amd": false
+    },
+    "rules": {
+        "quotes": [2, "double"]
+    }
+}

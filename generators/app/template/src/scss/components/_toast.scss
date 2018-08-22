@@ -1,0 +1,15 @@
+.wgt-toast {
+    .wgt-toast-container {
+        background: #ff6633;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 1280px;
+
+        .message {
+            padding: 8px 20px;
+        }
+
+    }
+
+}

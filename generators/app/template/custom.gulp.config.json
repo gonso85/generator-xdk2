@@ -1,0 +1,54 @@
+{
+    "requirejs": {
+        "name": "app",
+        "baseUrl": "src/js/",
+
+        "optimize": "uglify2",
+        "optimizeCss": "standard",
+
+        "out": "build/optimized/js/app.min.js",
+        "cssOut": "../../build/optimized/css/app.min.css",
+
+        "include": [
+            "xdk-base/device/workstation/detection",
+            "xdk-base/device/workstation/DevicePackage",
+            "xdk-base/device/shared/Html5Player"
+        ],
+
+        "mainConfigFile": [
+            "src/dep/dep.config.js",
+            "src/js/amd.config.js"
+        ],
+
+        "shim": {
+            "app": {
+                "deps": [
+                    "xdk-base/amd",
+                    "xdk-base/domReady",
+                    "../dep/dep.config.js",
+                    "../dep/img.map.js",
+                    "amd.config.js"
+                ]
+            }
+        },
+
+        "image": {
+            "outDir": "../../build/optimized/img",
+            "builtBaseUrlToImageDir": "../img",
+            "outMap": "../../src/dep/img.map.js"
+        },
+
+        "removeCombined": true
+    },
+
+    "distIncludes": [
+        "./src/**",
+        "!./src/dep{,/**}",
+        "!./src/js{,/**}",
+        "!./src/css{,/**}",
+        "!./src/scss{,/**}",
+        "!./src/configs{,/**}"
+    ],
+
+    "browserSyncProxy": "http://localhost/vdkctv-viki/src/"
+}

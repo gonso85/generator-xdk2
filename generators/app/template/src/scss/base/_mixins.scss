@@ -1,0 +1,22 @@
+@mixin transition ($properties...) {
+    -webkit-transition: $properties;
+    transition: $properties;
+}
+
+@mixin opacityTransition($time) {
+    transition: opacity $time ease-in;
+    -webkit-transition: opacity $time ease-in;
+    -moz-transition: opacity $time ease-in;
+    -o-transition: opacity $time ease-in;
+}
+
+@mixin borderRadius ($properties) {
+    -webkit-border-radius: $properties;
+    border-radius: $properties;
+}
+
+@mixin boxSizing ($properties) {
+    -webkit-box-sizing: $properties;
+    -moz-box-sizing: $properties;
+    box-sizing: $properties;
+}

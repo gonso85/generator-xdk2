@@ -1,0 +1,59 @@
+{
+    "app.name": "VIKI-Dev",
+
+    "__COMMENT__": "You can change below value of app.config to LOCAL or APPGRID",
+    "app.config": "LOCAL",
+
+    "remote": {
+        "api": "http://example.com/config.json"
+    },
+
+    "local": {
+        "landingPageEntryId": "PAGE1",
+        "mainMenuEntryId": "DEFAULT_MENU",
+        "ovpEndpointURL": "http://tveovp-accedops.rhcloud.com/"
+    },
+
+    "ovpEndpointURL": "http://tveovp-accedops.rhcloud.com/",
+
+    "appgrid": {
+        "api": "http://appgrid-api.cloud.accedo.tv",
+        "appKey": "57563c1b9c9dad01e7b696c5",
+        "localApi": "localData/appgrid",
+        "CMS": {
+            "type": {
+                "Container": "57563edc9c9dad01e7b6fe57",
+                "Item": "5756c99b0e65ad020e1e80e0",
+                "Menu": "57564e539c9dad01e7b9e504",
+                "MenuItem": "575650d89c9dad01e7ba8e03",
+                "Page": "57564acb9c9dad01e7b9df08"
+            },
+
+            "dictionaryTranslations": [
+                "detailsPageTranslations",
+                "errorMessagesTranslations",
+                "generalTranslations",
+                "playbackTranslations"
+            ],
+
+            "defaultDictionaryId": "566a541ae4b0a7dad1cacc78"
+
+        }
+    },
+
+    "device.packages": [
+        "xdk-base/device/workstation"
+    ],
+
+    "device.players": {
+        "workstation": ["xdk-base/device/shared/Html5Player"]
+    },
+
+    "approuter": {
+        "base": "app/ctrl"
+    },
+
+    "useVikiMap": true,
+
+    "version": "2.0.0"
+}

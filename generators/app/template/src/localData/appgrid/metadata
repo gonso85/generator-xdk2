@@ -1,0 +1,184 @@
+{
+    "config_menus": [{
+        "id": "DEFAULT",
+        "title": "",
+        "items": [{
+            "action": "vdk://page/VDKHOME",
+            "id": "DEFAULT",
+            "state": "",
+            "title": "VDKL",
+            "items": [{
+                "action": "",
+                "id": "DEFAULT",
+                "state": "",
+                "title": ""
+            }]
+        }, {
+            "action": "vdk://page/MOVIES",
+            "id": "MOVIES_NAV",
+            "state": "",
+            "title": "Movies",
+            "items": [{
+                "action": "vdk://page/MULTILIST_ACTIONADVENTURE",
+                "id": "DEFAULT",
+                "state": "",
+                "title": "MULTILIST_ACTIONADVENTURE"
+            }]
+        }, {
+            "action": "vdk://page/KIDS",
+            "id": "KIDS",
+            "state": "",
+            "title": "KIDS",
+            "items": [{
+                "action": "",
+                "id": "DEFAULT",
+                "state": "",
+                "title": ""
+            }]
+        }, {
+            "action": "vdk://page/SETTINGS",
+            "id": "SETTINGS",
+            "state": "",
+            "title": "settings",
+            "items": [{
+                "action": "",
+                "id": "DEFAULT",
+                "state": "",
+                "title": ""
+            }]
+        }, {
+            "action": "vdk://page/MESSAGE",
+            "id": "message",
+            "state": "",
+            "title": "Message Test",
+            "items": [{
+                "action": "",
+                "id": "DEFAULT",
+                "state": "",
+                "title": ""
+            }]
+        }]
+    }],
+    "config_pages": [{
+        "template": "DEFAULT",
+        "nav": "DEFAULT",
+        "isEntry": true,
+        "id": "KIDS",
+        "state": "",
+        "containers": [{
+            "id": "DEFAULT"
+        }],
+        "title": ""
+    }, {
+        "template": "DEFAULT",
+        "nav": "DEFAULT",
+        "isEntry": true,
+        "id": "VDKHOME",
+        "state": "",
+        "containers": [{
+            "id": "XMAS_SPECIAL"
+        }, {
+            "id": "JURASSIC_PARK"
+        }],
+        "title": "Home"
+    }, {
+        "template": "DEFAULT",
+        "nav": "DEFAULT",
+        "isEntry": false,
+        "id": "MOVIES",
+        "state": "",
+        "containers": [{
+            "id": "END_OF_THE_WORLD"
+        }],
+        "title": "Movies"
+    }, {
+        "template": "DEFAULT",
+        "nav": "DEFAULT",
+        "isEntry": false,
+        "id": "MULTILIST_ACTIONADVENTURE",
+        "state": "",
+        "containers": [{
+            "id": "DEFAULT"
+        }],
+        "title": "Action & Adventure"
+    }, {
+        "template": "SETTINGS",
+        "nav": "DEFAULT",
+        "isEntry": false,
+        "id": "SETTINGS",
+        "state": "",
+        "containers": [{
+            "id": "DEFAULT"
+        }],
+        "title": "Settings"
+    }, {
+        "template": "MESSAGE_TEST",
+        "nav": "DEFAULT",
+        "isEntry": false,
+        "id": "MESSAGE",
+        "state": "",
+        "containers": [{
+            "id": "DEFAULT"
+        }],
+        "title": ""
+    }],
+    "messages": [{
+        "code": "11001",
+        "log": false,
+        "id": "11001",
+        "title": "xError",
+        "message": "Can't find the configuration",
+        "type": "fullscreen",
+        "_description": "CONFIGURATION_SERVICE NOT_FOUND"
+    }, {
+        "code": "43004",
+        "log": false,
+        "id": "43004",
+        "title": "Unauthorized",
+        "message": "Unauthorized.",
+        "type": "",
+        "_description": "AUTHENTICATION_SERVICE UNAUTHORIZED"
+    }, {
+        "code": "11002",
+        "log": false,
+        "id": "11002",
+        "title": "",
+        "message": "Cannot get the configurations due to network errors.",
+        "type": "toast",
+        "_description": "CONFIGURATION_SERVICE:NETWORK"
+    }],
+    "config_containers": [{
+        "template": "DEFAULT",
+        "data": "http://www.service.ovp.com/getdatabyid=123",
+        "count": 5,
+        "action": "vdk://page/VIDEO_DETAILS?data=video",
+        "sort": "title",
+        "id": "XMAS_SPECIAL",
+        "state": [{
+            "value": "ALL"
+        }],
+        "title": ""
+    }, {
+        "template": "HERO",
+        "data": "",
+        "count": 1,
+        "action": "",
+        "sort": "",
+        "id": "JURASSIC_PARK",
+        "state": [{
+            "value": "ALL"
+        }],
+        "title": "Jurassic Park"
+    }, {
+        "template": "POSTER",
+        "data": "",
+        "count": 1,
+        "action": "",
+        "sort": "",
+        "id": "END_OF_THE_WORLD",
+        "state": [{
+            "value": "ALL"
+        }],
+        "title": "Dooms Day"
+    }]
+}

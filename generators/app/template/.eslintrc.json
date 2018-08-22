@@ -1,0 +1,66 @@
+{
+    "root": true,
+
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+
+    "globals": {
+        "chai": true
+    },
+
+    "env": {
+        "node": true
+    },
+
+    "extends": "eslint:recommended",
+
+    "rules": {
+        // possible errors
+        "no-global-assign": [2, { "exceptions": ["object"] }],
+
+        // best practices
+        "default-case": 2,
+        "dot-notation": 2,
+        "guard-for-in": 2,
+        "no-floating-decimal": 2,
+        "no-labels": 2,
+        "radix": 2,
+        "valid-jsdoc": [1, { "prefer": { "return": "returns" } }],
+        "wrap-iife": 2,
+
+        // strict mode
+        "strict": 2,
+
+        // variables
+        "no-catch-shadow": 2,
+        "no-undef-init": 2,
+        "no-use-before-define": [2, "nofunc"],
+
+        // stylistic issues
+        "brace-style": 2,
+        "camelcase": 1,
+        "comma-dangle": [2, "never"],
+        "comma-spacing": [2, { "before": false, "after": true }],
+        "comma-style": [2, "last"],
+        "eol-last": 2,
+        "func-style": [1, "declaration", { "allowArrowFunctions": true }],
+        "indent": [2, 4, {"SwitchCase": 1, "MemberExpression": 1, "CallExpression": {"arguments": 1}}],
+        "key-spacing": 1,
+        "linebreak-style": 2,
+        "new-cap": 1,
+        "new-parens": 2,
+        "no-multi-spaces": 2,
+        "no-nested-ternary": 2,
+        "no-trailing-spaces": [2, { "skipBlankLines": false }],
+        "no-underscore-dangle": [1, { "allowAfterThis": true }],
+        "semi": [2, "always"],
+        "keyword-spacing": 2,
+        "quotes": [2, "single"],
+        "space-before-blocks": 2,
+        "space-before-function-paren": [1, { "anonymous": "always", "named": "never" }],
+        "space-in-parens": [2, "never"],
+        "space-unary-ops": [1, { "words": true, "nonwords": false }],
+        "spaced-comment": [2, "always", { "exceptions": ["-"] }]
+    }
+}

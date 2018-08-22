@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "../.eslintrc.json"
+    ],
+    "env": {
+        "commonjs": true,
+        "es6": true
+    },
+    "rules": {
+        "quotes": [2, "double"],
+        "strict": [2, "function"],
+        "no-console": 0
+    }
+}

@@ -1,0 +1,28 @@
+body {
+    background: #000;
+}
+
+#TVArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: #aaaaaa
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#subCtrlContainer {
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    width: 1280px;
+    height: 560px;
+    overflow: hidden;
+}

@@ -1,0 +1,43 @@
+.wgt-fullscreen-message {
+    z-index: 200;
+
+    .wgt-dialog-container {
+        background: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1280px;
+        height: 720px;
+
+        .wgt-dialog-content {
+            margin: 100px auto;
+            padding: 10px 15px;
+            position: relative;
+            width: 960px;
+            text-align: center;
+            height: 500px;
+
+            .title {
+                font-size: 33px;
+                height: 50px;
+            }
+
+            .message {
+                font-size: 23px;
+                line-height: 36px;
+                padding: 20px;
+                height: 355px;
+            }
+
+            .wgt-button {
+                font-size: 20px;
+                margin: auto;
+                padding: 8px;
+                width: 170px;
+            }
+
+        }
+
+    }
+
+}
